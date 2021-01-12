@@ -30,6 +30,54 @@
       </style>
 
 
+<style>
+  body, html {
+    height: 85%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("DANCEEE.jpg");
+    
+    /* Add the blur effect */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.308); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 12px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 0px;
+    text-align: center;
+  }
+  </style>
+
+
+
 
 </head>
 <body style="margin: 0; background-color: rgb(100, 92, 100);">
@@ -186,7 +234,14 @@ function topFunction() {
           .prev, .next,.text {font-size: 11px}
         }
         </style>
+       <div class="bg-image"></div>
+
+       <div class="bg-text">
+         <h1 style="font-size:50px; font-family: 'Times New Roman', Times, serif;">DanceX</h1>
+         
+       </div>
        
+      
         
         <div class="slideshow-container">
         
@@ -272,8 +327,12 @@ function topFunction() {
 
         </script>
         
-
+        
+        
         <img src="DancePic6b.png" alt="Dance" height="2000px" width="100%" >
+
+
+
      <table style="background-color: white; width: 100%;"
         <tr>
             <td>
@@ -335,16 +394,16 @@ function topFunction() {
     <table style="background-color:black;height: 300px; width: 100%;">
       <tr>  
           <td style="font-size: 20px;">
-               <p style="color: yellow; margin-left: 50px;"> ABOUT TDX </p>
-               <p style="color: rgb(255, 255, 255); margin-left: 50px;">
+               <p style="color: yellow; margin-left: 50px;font-family: 'Times New Roman', Times, serif;"> ABOUT TDX </p>
+               <p style="color: rgb(255, 255, 255); margin-left: 50px;font-family: 'Times New Roman', Times, serif;">
               Dancex comprises of <br>
               The Dancex Academy and <br>
               The Dancex Student. <br>
                </p>
           </td>
           <td style="font-size: 20px;">
-               <p style="color: yellow; margin-left: 50px;"> NEW DELHI OFFICE </p>
-               <p style="color: rgb(255, 255, 255); margin-left: 50px;">
+               <p style="color: yellow; margin-left: 50px;font-family: 'Times New Roman', Times, serif;"> NEW DELHI OFFICE </p>
+               <p style="color: rgb(255, 255, 255); margin-left: 50px;font-family: 'Times New Roman', Times, serif;">
                   The Dancex, C-2, Creche Plot,<br>
                   Sushant Lok Phase 1,<br>
                   Near Vyapar Kendra,<br>
@@ -353,8 +412,8 @@ function topFunction() {
                </p>
           </td>
           <td style="font-size: 20px;">
-              <p style="color: yellow; margin-left: 50px;"> MUMBAI OFFICE </p>
-              <p style="color: rgb(255, 255, 255); margin-left: 50px;">
+              <p style="color: yellow; margin-left: 50px;font-family: 'Times New Roman', Times, serif;"> MUMBAI OFFICE </p>
+              <p style="color: rgb(255, 255, 255); margin-left: 50px;font-family: 'Times New Roman', Times, serif;">
                   The Dancex,<br>
                   314, Laxmi Business Park,<br>
                   Laxmi Industrial estate,<br>
@@ -364,7 +423,7 @@ function topFunction() {
               </p>
          </td>
          <td style="font-size: 20px;">
-          <p style="color: yellow; margin-left: 20px;">QUICK INQUIRY </p>
+          <p style="color: yellow; margin-left: 20px;font-family: 'Times New Roman', Times, serif;">QUICK INQUIRY </p>
               <input type="text" class="form-control" name="name" placeholder="NAME" style="background: 0 0;border-radius: 0;border-color: white;font-size: 14px;height: 5px;padding: 20px;color: #fff;">
               <br><br>
               <input type="email" class="form-control" name="email" placeholder="EMAIL ADDRESS" style="background: 0 0;border-radius: 0;border-color: white;font-size: 14px;height: 5px;padding: 20px;color: #fff;">
@@ -374,7 +433,7 @@ function topFunction() {
               <textarea class="form-control" name="message" rows="4" placeholder="MESSAGE" style="height: auto; resize: none;background: 0 0; border-radius: 0;border-color: white;font-size: 14px;height: 20px;padding: 20px;color: #fff;"></textarea>
           </p>
           <p>  
-              <button type="submit"  style="background-color: yellow;  width: 250px; height: 60px; font-size: 20px;">Submit Now </button> 
+              <button type="submit"  style="background-color: yellow;  width: 250px; height: 60px; font-size: 20px;font-family: 'Times New Roman', Times, serif;">Submit Now </button> 
           </p>
      </td>
 

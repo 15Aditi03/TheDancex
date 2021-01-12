@@ -30,11 +30,95 @@
           background-color: #555;
         }
         </style>
+
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: automatic;
+      position: relative;
+      margin: auto;
+    }
+  
+
+  
+ 
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+   
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
   
 </head>
 <body style="margin: 0; background-color: rgb(100, 92, 100);">
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+   
+    
+        
+
 <script>
 
 var mybutton = document.getElementById("myBtn");
@@ -89,11 +173,77 @@ function topFunction() {
             </tr>
      </table>
      
+     <div class="slideshow-container">
+
+        <div class="mySlides fade" style="text-align: center;">
+          <img src="RegisterNow.jpeg" style="width:100%">
+         
+        </div>
+        <div class="middle" style="box-sizing: border-box; background-color: whitesmoke; background-origin: padding-box; padding: 5px; border-color: rgb(0, 0, 0); border-radius: 5px; border-style:solid; font-size: large; font-family:'Times New Roman', Times, serif;">
+            <h1>COMING SOON</h1>
+            <hr>
+            <p>35 days left</p>
+            <br>
+            <a href="https://15aditi03.github.io/TheDancex/5JoinUs.html" class="btn" style="position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+            padding: 10px 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;background-color: black;font-size: large; font-family:'Times New Roman', Times, serif;">Register Now</a>
+          </div>
+           
+        
+        <div class="mySlides fade">
+          <img src="Scroll1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Scroll2.jpg" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center;">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
+     
      <table>
             <tr>
                 <td>
-                    <p style="margin-left: 200px;color:rgb(252, 189, 94);margin-right: 120px;font-size: 50px; font-weight: 800;opacity: 0.5;">ABOUT US</p>
-                    <p style="color: white; margin-right: 80px;margin-left: 200px;font-size: 20px;">
+                    <p style="margin-left: 200px;color:rgb(252, 189, 94);font-family: 'Times New Roman', Times, serif;margin-right: 120px;font-size: 50px; font-weight: 800;opacity: 0.5;">ABOUT US</p>
+                    <p style="color: white; margin-right: 80px;margin-left: 200px;font-size: 20px; font-family: 'Times New Roman', Times, serif;">
                  The Dancex comprises of The Dancex Academy  and The <br>
                  Dancex Student Repertory Company. <br><br>
                  The Dancex Academy was  set up by Indian-Australian <br> 
@@ -119,8 +269,8 @@ function topFunction() {
                     <img style="margin-top: 20px;margin-left: 50px;" src="Dancepic8.png" alt="girl">
                  </td>
                  <td>
-                    <p style="text-align:left;color:rgb(252, 189, 94);margin-right: 50px;font-size: 50px; font-weight: 800;opacity: 0.5; ">THE PHILOSOPHY</p>
-                    <p style="color: white; margin-right: 80px;font-size: 20px;">
+                    <p style="text-align:left;color:rgb(252, 189, 94);margin-right: 50px;font-size: 50px;font-family: 'Times New Roman', Times, serif; font-weight: 800;opacity: 0.5; ">THE PHILOSOPHY</p>
+                    <p style="color: white; margin-right: 80px;font-size: 20px;font-family: 'Times New Roman', Times, serif;">
                         The philosophy of The Dancex is “Helping people find <br>
                         and build their dance & themselves, to full potential, in an <br> 
                         environment of fun, love & values”. <br><br>
@@ -133,8 +283,8 @@ function topFunction() {
                 </tr>
                 <tr>
                 <td>
-                    <p style="margin-left: 200px;color: rgb(252, 189, 94);margin-right: 150px;font-size: 50px; font-weight: 800;opacity: 0.5; ">THE VISION</p>
-                    <p style="color: white; margin-right: 120px;margin-left: 200px;font-size: 20px;">
+                    <p style="margin-left: 200px;color: rgb(252, 189, 94);margin-right: 150px;font-family: 'Times New Roman', Times, serif;font-size: 50px; font-weight: 800;opacity: 0.5; ">THE VISION</p>
+                    <p style="color: white; margin-right: 120px;margin-left: 200px;font-size: 20px;font-family: 'Times New Roman', Times, serif;">
                         “To create a higher awareness & understanding of international <br>
                         dance and to facilitate & help in developing constantly evolvingbr
                         artists.”
@@ -210,7 +360,7 @@ function topFunction() {
     </table>    
     <table style="background-color:black;height: 300px; width: 100%;">
         <tr>  
-            <td style="font-size: 20px;">
+            <td style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">
                  <p style="color: yellow; margin-left: 50px;"> ABOUT TDX </p>
                  <p style="color: rgb(255, 255, 255); margin-left: 50px;">
                 Dancex comprises of <br>
@@ -218,7 +368,7 @@ function topFunction() {
                 The Dancex Student. <br>
                  </p>
             </td>
-            <td style="font-size: 20px;">
+            <td style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">
                  <p style="color: yellow; margin-left: 50px;"> NEW DELHI OFFICE </p>
                  <p style="color: rgb(255, 255, 255); margin-left: 50px;">
                     The Dancex, C-2, Creche Plot,<br>
@@ -228,7 +378,7 @@ function topFunction() {
                     Haryana, India. <br>
                  </p>
             </td>
-            <td style="font-size: 20px;">
+            <td style="font-size: 20px;font-family: 'Times New Roman', Times, serif;">
                 <p style="color: yellow; margin-left: 50px;"> MUMBAI OFFICE </p>
                 <p style="color: rgb(255, 255, 255); margin-left: 50px;">
                     The Dancex,<br>
@@ -240,7 +390,7 @@ function topFunction() {
                 </p>
            </td>
            <td style="font-size: 20px;">
-            <p style="color: yellow; margin-left: 20px;">QUICK INQUIRY </p>
+            <p style="color: yellow; margin-left: 20px;font-family: 'Times New Roman', Times, serif;">QUICK INQUIRY </p>
                 <input type="text" class="form-control" name="name" placeholder="NAME" style="background: 0 0;border-radius: 0;border-color: white;font-size: 14px;height: 5px;padding: 20px;color: #fff;">
                 <br><br>
                 <input type="email" class="form-control" name="email" placeholder="EMAIL ADDRESS" style="background: 0 0;border-radius: 0;border-color: white;font-size: 14px;height: 5px;padding: 20px;color: #fff;">
@@ -250,7 +400,7 @@ function topFunction() {
                 <textarea class="form-control" name="message" rows="4" placeholder="MESSAGE" style="height: auto; resize: none;background: 0 0; border-radius: 0;border-color: white;font-size: 14px;height: 20px;padding: 20px;color: #fff;"></textarea>
             </p>
             <p>  
-                <button type="submit"  style="background-color: yellow;  width: 250px; height: 60px; font-size: 20px;">Submit Now </button> 
+                <button type="submit"  style="background-color: yellow;  width: 250px; height: 60px; font-size: 20px;font-family: 'Times New Roman', Times, serif;">Submit Now </button> 
             </p>
        </td>
 
